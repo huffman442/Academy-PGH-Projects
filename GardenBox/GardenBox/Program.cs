@@ -28,7 +28,9 @@ namespace GardenBox
             double cornperbox = Math.Floor(corn * area);
             double beetsperbox = Math.Floor(beets * area);
             //Display Veggies Per Box
-            
+            Console.WriteLine($"You could plant {carrotsperbox} carrots");
+            Console.WriteLine($"You could plant {cornperbox} corn");
+            Console.WriteLine($"You could plant {beetsperbox} beets");
 
             Console.ReadLine();
         }
