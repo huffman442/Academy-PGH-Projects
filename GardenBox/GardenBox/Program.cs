@@ -17,8 +17,12 @@ namespace GardenBox
             double length = Convert.ToDouble(Console.ReadLine());
 
             //Calculate Area
+            double area = width * length;
 
             //Veggies Per Sq. Ft.
+            double carrots = 1;
+            double corn = 3.0 / 16;
+            double beets = 4.0 / 16;
 
             //Display Veggies Per Box
 
