@@ -20,11 +20,15 @@ namespace GardenBox
             double area = width * length;
 
             //Veggies Per Sq. Ft.
-            double carrots = 1;
+            double carrots = 1.0;
             double corn = 3.0 / 16;
             double beets = 4.0 / 16;
 
+            double carrotsperbox = Math.Floor(carrots * area);
+            double cornperbox = Math.Floor(corn * area);
+            double beetsperbox = Math.Floor(beets * area);
             //Display Veggies Per Box
+            
 
             Console.ReadLine();
         }
