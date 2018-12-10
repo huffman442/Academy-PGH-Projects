@@ -79,39 +79,91 @@ namespace CashRegister
                 Console.WriteLine("Broken Down: ");
                 if (twenties > 0)
                 {
-                    Console.WriteLine($"{twenties} twenties");
+                    if (twenties > 1)
+                    {
+                        Console.WriteLine($"{twenties} 20 dollar bills");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 20 dollar bill");
+                    }
                 }
                 if (tens > 0)
                 {
-                    Console.WriteLine($"{twenties} 20 dollar bills");
-                }
-                if (twenties > 0)
-                {
-                    Console.WriteLine($"{tens} 10 dollar bills");
+                    if (tens > 1)
+                    {
+                        Console.WriteLine($"{tens} 10 dollar bills");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 10 Dollar bill");
+                    }
                 }
                 if (fives > 0)
                 {
-                    Console.WriteLine($"{fives} 5 dollar bills");
+                    if (fives > 1)
+                    {
+                        Console.WriteLine($"{fives} 5 dollar bills");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 5 dollar bill");
+                    }
                 }
                 if (ones > 0)
                 {
-                    Console.WriteLine($"{ones} 1 dollar bills");
+                    if (ones > 1)
+                    {
+                        Console.WriteLine($"{ones} 1 dollar bills");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 1 dollar bill");
+                    }
                 }
                 if (quarters > 0)
                 {
-                    Console.WriteLine($"{quarters} quarters");
+                    if (quarters > 1)
+                    {
+                        Console.WriteLine($"{quarters} quarters");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 quarter");
+                    }
                 }
                 if (dimes > 0)
                 {
-                    Console.WriteLine($"{dimes} dimes");
+                    if (dimes > 1)
+                    {
+                        Console.WriteLine($"{dimes} dimes");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 dime");
+                    }
                 }
                 if (nickels > 0)
                 {
-                    Console.WriteLine($"{nickels} nickels");
+                    if (nickels > 1)
+                    {
+                        Console.WriteLine($"{nickels} nickels");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 nickel");
+                    }
                 }
                 if (pennies > 0)
                 {
-                    Console.WriteLine($"{pennies} pennies");
+                    if (pennies > 1)
+                    {
+                        Console.WriteLine($"{pennies} pennies");
+                    }
+                    else
+                    {
+                        Console.WriteLine("1 penny");
+                    }
                 }
             }
             else if (payment == cost)
