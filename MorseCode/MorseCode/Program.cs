@@ -52,9 +52,14 @@ namespace MorseCode
             for (int i = 0; i < toConvert.Length; i++)
             {
                 int mapIndex = map.IndexOf(toConvert[i]);
-                converted += morseLibrary[mapIndex];
+                converted += $"{morseLibrary[mapIndex]} ";
             }
 
+
+            //Output Converted String
+            Console.WriteLine(converted);
+
+            Console.ReadLine();
         }
     }
 }
