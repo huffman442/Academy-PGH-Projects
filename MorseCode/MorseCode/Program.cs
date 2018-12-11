@@ -43,6 +43,17 @@ namespace MorseCode
             //Map for conversion
             string map = "abcdefghijklmnopqrstuvwxyz ";
 
+            //User input
+            Console.WriteLine("What string would you like to convert?(no special characters a-z only)");
+            string toConvert = Console.ReadLine();
+
+            string converted = "";
+            toConvert = toConvert.ToLower();
+            for (int i = 0; i < toConvert.Length; i++)
+            {
+                int mapIndex = map.IndexOf(toConvert[i]);
+                converted += morseLibrary[mapIndex];
+            }
 
         }
     }
