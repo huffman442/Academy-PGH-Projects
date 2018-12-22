@@ -8,7 +8,7 @@ namespace GameOLife
         {
             int alive = 1;
             Random rnd = new Random();
-            int sizeOfGrid = 20;
+            int sizeOfGrid = 40;
             int[,] grid = new int[sizeOfGrid, sizeOfGrid];
             for (int i = 0; i < sizeOfGrid; i++)
             {
